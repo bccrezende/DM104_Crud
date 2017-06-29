@@ -1,0 +1,17 @@
+{
+  "name": "client",
+  "homepage": "https://github.com/bccrezende/DM104_Crud",
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4"
+  }
+}

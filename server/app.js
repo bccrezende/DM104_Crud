@@ -40,7 +40,7 @@ app.use(
     connection(mysql,{
         host: 'localhost',
         user: 'root',
-        password : '123456',
+        password : '',
         port : 3306, //port mysql
         database:'api'
     },'request')

@@ -4,7 +4,7 @@ var App = angular.module('App', [
 'services'
 ]);
 
-App.config(function($routeProvider){
+App.config(function($routeProvider, $locationProvider){
 	$routeProvider
 	.when('/', {
 		templateUrl: 'views/read.html',
@@ -20,6 +20,9 @@ App.config(function($routeProvider){
 		templateUrl: 'views/edit.html',
 		controller: 'EditCtrl'
 	})
+	.otherwise({redirectTo: '/'});
+
+	$locationProvider.hashPrefix('');
 });
 
 App.value('API', 'http://localhost:3000/');
